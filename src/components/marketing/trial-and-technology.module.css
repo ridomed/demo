@@ -1,0 +1,32 @@
+.trial { display:grid; grid-template-columns:1fr 240px; gap:50px; align-items:center; padding:56px; margin-block:60px; border-radius:28px; background:linear-gradient(120deg,#081b3a,#123e7a); color:white; overflow:hidden; }
+.eyebrow { display:block; font-size:11px; font-weight:700; letter-spacing:.08em; line-height:1.8; }
+.trial .eyebrow { color:#a9d0ff; }
+.trial h2 { font-size:clamp(26px,3vw,40px); line-height:1.25; margin:14px 0; max-width:640px; }
+.trial p { color:#c5d7ee; font-size:15px; line-height:1.8; max-width:600px; }
+.trial ul { display:flex; flex-wrap:wrap; gap:12px 22px; list-style:none; padding:0; margin:24px 0; }
+.trial li { display:flex; align-items:center; gap:7px; font-size:13px; }
+.trial li svg { color:#70e2b0; flex-shrink:0; }
+.actions { display:flex; flex-wrap:wrap; align-items:center; gap:20px; }
+.contact,.demo { display:inline-flex; align-items:center; justify-content:center; gap:10px; font-size:14px; font-weight:600; text-decoration:none; }
+.contact { padding:14px 20px; border-radius:12px; background:#fff; color:#0a5134; }
+.contact:hover { background:#e1faed; }
+.demo { color:white; padding-block:14px; }
+.trialNumber { display:flex; flex-direction:column; align-items:center; padding:30px; border:1px solid #ffffff30; border-radius:24px; background:#ffffff0a; }
+.trialNumber > svg { color:#8fbfff; }
+.trialNumber strong { font-size:112px; line-height:1.2; letter-spacing:-6px; }
+.trialNumber span { color:#c5d7ee; font-size:19px; }
+.technologies { padding-block:65px 85px; }
+.technologies header { text-align:center; max-width:680px; margin:0 auto 36px; }
+.technologies .eyebrow { color:#0061ef; }
+.technologies h2 { font-size:clamp(26px,3vw,38px); margin:12px 0; line-height:1.35; }
+.technologies header p { font-size:15px; line-height:1.8; color:#566c90; }
+.techGrid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+.techGrid article { padding:24px; border:1px solid #e1e9f4; border-radius:16px; background:#fafcff; }
+.techGrid svg { color:#0061ef; margin-bottom:18px; }
+.techGrid h3 { font-size:17px; }
+.techGrid p { margin-top:7px; color:#566c90; font-size:13px; line-height:1.7; }
+.floating { position:fixed; inset-inline-end:24px; bottom:max(24px,env(safe-area-inset-bottom)); z-index:60; display:flex; align-items:center; gap:12px; min-height:58px; padding:16px 21px; border:1px solid #ffffff60; border-radius:999px; background:#128c4e; color:#fff; box-shadow:0 8px 30px #064b3033; font-size:14px; font-weight:600; text-decoration:none; transition:background .2s,transform .2s; }
+.floating:hover { background:#0b753f; transform:translateY(-3px); }
+.floating:focus-visible,.actions a:focus-visible { outline:3px solid #73b8ff; outline-offset:4px; }
+@media(max-width:767px) { .trial { grid-template-columns:1fr; padding:30px; gap:28px; } .trialNumber { flex-direction:row; justify-content:center; gap:20px; padding:18px; grid-row:1; } .trialNumber strong { font-size:64px; letter-spacing:-3px; } .techGrid { grid-template-columns:repeat(2,minmax(0,1fr)); } .floating { padding:16px; inset-inline-end:16px; bottom:max(16px,env(safe-area-inset-bottom)); } .floating span { display:none; } .techGrid article { padding:20px; } }
+@media(prefers-reduced-motion:reduce) { .floating { transition:none; } }

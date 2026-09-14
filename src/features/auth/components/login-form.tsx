@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useT } from "@/i18n/locale-provider";
 
-export function LoginForm() {
+export function LoginForm({ demo }: { demo?: { email: string; password: string } | null }) {
   const t = useT();
   const [errorMessage, formAction, isPending] = useActionState(
     authenticate,
@@ -25,6 +25,7 @@ export function LoginForm() {
           required
           autoComplete="email"
           placeholder="admin@example.com"
+          defaultValue={demo?.email ?? ""}
         />
       </div>
       <div className="space-y-2">
@@ -35,6 +36,7 @@ export function LoginForm() {
           type="password"
           required
           autoComplete="current-password"
+          defaultValue={demo?.password ?? ""}
         />
       </div>
       {errorMessage && (

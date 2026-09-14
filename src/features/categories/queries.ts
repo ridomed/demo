@@ -95,20 +95,3 @@ export async function getCategoryProfile(id: string, productPage: number) {
     lowStockCount: Number(lowStockRows[0]?.count ?? 0),
   };
 }
-
-export async function getPublicCategoriesWithCounts() {
-  return prisma.category.findMany({
-    orderBy: { name: "asc" },
-    select: {
-      id: true,
-      name: true,
-      slug: true,
-      imageSecureUrl: true,
-      _count: { select: { products: { where: { status: "ACTIVE" } } } },
-    },
-  });
-}
-
-export async function getCategoryBySlug(slug: string) {
-  return prisma.category.findUnique({ where: { slug } });
-}

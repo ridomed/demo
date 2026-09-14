@@ -77,7 +77,6 @@ export async function createProduct(input: unknown): Promise<ActionResult> {
   }
 
   revalidatePath("/dashboard/products");
-  revalidatePath("/products");
   return { success: true };
 }
 
@@ -193,8 +192,6 @@ export async function updateProduct(
   );
 
   revalidatePath("/dashboard/products");
-  revalidatePath("/products");
-  revalidatePath(`/products/${parsed.data.slug}`);
   if (quantityDelta !== 0 || purchasePriceChanged) {
     revalidatePath("/dashboard/inventory");
     revalidatePath("/dashboard");
@@ -346,7 +343,6 @@ export async function deleteProduct(
   );
 
   revalidatePath("/dashboard/products");
-  revalidatePath("/products");
   revalidatePath("/dashboard");
   revalidatePath("/dashboard/inventory");
   return { success: true };
@@ -389,7 +385,6 @@ export async function deleteProducts(
   }
 
   revalidatePath("/dashboard/products");
-  revalidatePath("/products");
   revalidatePath("/dashboard");
   revalidatePath("/dashboard/inventory");
 

@@ -1,0 +1,554 @@
+{
+  "seo": {
+    "title": "Gestion de stock, ventes et achats",
+    "description": "Gérez vos stocks, ventes, achats, fournisseurs, clients et factures dans un même espace, avec la lecture des factures fournisseurs assistée par IA."
+  },
+  "nav": {
+    "home": "Accueil",
+    "main": "Navigation principale",
+    "mobile": "Navigation mobile",
+    "open": "Ouvrir le menu",
+    "close": "Fermer le menu",
+    "language": "Langue",
+    "explore": "Tester le tableau de bord",
+    "links": [
+      "Produit",
+      "Fonctionnalités",
+      "Caisse",
+      "Scanner IA",
+      "À propos",
+      "FAQ"
+    ]
+  },
+  "skip": "Aller au contenu",
+  "hero": {
+    "eyebrow": "Toute votre gestion dans un seul système",
+    "title": "Gérez toute votre\nactivité depuis",
+    "accent": "un seul endroit.",
+    "intro": "Gérez ventes, stocks, achats, fournisseurs, clients et factures dans un système connecté.",
+    "description": "Avec le scan de factures assisté par IA.",
+    "explore": "Voir la démo",
+    "note": "Moins de saisie. Plus de contrôle. Découvrez le scanner de factures IA.",
+    "connected": "Un espace de travail connecté",
+    "sample": "Interface représentative · données fictives",
+    "discover": "Découvrir le produit"
+  },
+  "trust": [
+    "Accès selon les rôles",
+    "Historique des mouvements",
+    "Opérations connectées",
+    "Achats soumis à validation"
+  ],
+  "outcomes": {
+    "eyebrow": "MOINS DE RECHERCHES. PLUS DE CLARTÉ.",
+    "title": "Gardez la main sur votre activité quotidienne.",
+    "intro": "Les ventes et les stocks vont ensemble. Les achats ne devraient pas se perdre dans des tableurs. Rassemblez vos opérations.",
+    "items": [
+      [
+        "Sachez ce qui est en stock.",
+        "Consultez les quantités, les stocks faibles et chaque mouvement associé."
+      ],
+      [
+        "Facilitez les ventes.",
+        "Trouvez vos produits, composez un panier et enregistrez la vente avec sa facture."
+      ],
+      [
+        "Maîtrisez chaque achat.",
+        "Gérez fournisseurs, commandes et réceptions dans un même parcours."
+      ],
+      [
+        "Prenez du recul.",
+        "Suivez les ventes, les paiements et les stocks grâce à des rapports ciblés."
+      ]
+    ]
+  },
+  "product": {
+    "eyebrow": "UN ESPACE DE TRAVAIL CONNECTÉ",
+    "title": "Toute votre activité en un coup d’œil.",
+    "description": "Un point de départ pour la journée. Chaque opération à portée de main.",
+    "more": {
+      "title": "Et bien plus, dans le même espace.",
+      "description": "Gardez vos clients, vos finances et votre équipe connectés au reste de votre activité.",
+      "cta": "Découvrir les fonctionnalités",
+      "highlights": [
+        "Caisse",
+        "Scan de factures IA",
+        "Comptes clients",
+        "Permissions de l’équipe"
+      ]
+    }
+  },
+  "tabs": [
+    {
+      "name": "Tableau de bord",
+      "text": "Une vue claire sur ce qui compte.",
+      "benefits": [
+        "Tendances des ventes",
+        "Commandes en attente",
+        "Stocks faibles"
+      ]
+    },
+    {
+      "name": "Commandes",
+      "text": "Consultez les commandes clients, les produits et les totaux au même endroit.",
+      "benefits": [
+        "Commandes clients",
+        "Détails des commandes",
+        "Génération de factures"
+      ]
+    },
+    {
+      "name": "Stock",
+      "text": "Sachez ce que vous avez et d’où cela vient.",
+      "benefits": [
+        "Quantités disponibles",
+        "Alertes de stock",
+        "Historique des mouvements"
+      ]
+    },
+    {
+      "name": "Achats",
+      "text": "Réunissez fournisseurs, achats et réceptions.",
+      "benefits": [
+        "Commandes d’achat",
+        "Paiements fournisseurs",
+        "Réception du stock"
+      ]
+    },
+    {
+      "name": "Rapports",
+      "text": "Des données pour éclairer vos décisions.",
+      "benefits": [
+        "Tendances des ventes",
+        "Rapports produits",
+        "Rapports de stock"
+      ]
+    }
+  ],
+  "scanner": {
+    "eyebrow": "SCANNER DE FACTURES D’ACHAT IA",
+    "title": "Moins de saisie. Plus de temps pour avancer.",
+    "description": "Transformez vos factures fournisseurs en données d’achat. Importez un PDF ou une image, extrayez les informations et vérifiez les correspondances avant de confirmer.",
+    "human": "Votre vérification précède la confirmation.",
+    "workflow": [
+      "Importer la facture",
+      "Extraire les données",
+      "Associer les produits",
+      "Vérifier",
+      "Confirmer l’achat"
+    ],
+    "name": "Scanner de factures",
+    "sample": "Démonstration interactive · données fictives",
+    "stages": [
+      "Facture",
+      "Extraction",
+      "Association",
+      "Vérification"
+    ],
+    "file": "facture-fournisseur.pdf",
+    "supplier": "Atlas Supply · facture fournisseur fictive",
+    "messages": [
+      "Une facture fournisseur prête à être analysée.",
+      "Les informations sont extraites en lignes structurées.",
+      "Des correspondances sont proposées. Une ligne reste à vérifier.",
+      "Vérifiez quantités, prix et correspondances avant de confirmer."
+    ],
+    "caption": "Exemple de lignes de facture extraites",
+    "columns": [
+      "Produit",
+      "Qté",
+      "Prix unitaire",
+      "Correspondance"
+    ],
+    "products": [
+      "Sac quotidien",
+      "Tasse en céramique"
+    ],
+    "matched": "Associé",
+    "review": "À vérifier",
+    "safe": "Dans l’application, résolvez les correspondances avant de confirmer. Cette démonstration n’enregistre rien.",
+    "control": "Vous gardez la main. L’IA propose, vous vérifiez.",
+    "buttons": [
+      "Essayer la démonstration",
+      "Voir les correspondances",
+      "Vérifier les résultats",
+      "Recommencer"
+    ],
+    "currency": "DH"
+  },
+  "workflows": [
+    {
+      "eyebrow": "01 / CAISSE · POINT DE VENTE",
+      "title": "Une caisse complète pour vos ventes quotidiennes.",
+      "text": "Un espace dédié pour choisir un client, scanner les produits, préparer le panier et enregistrer le paiement. Chaque vente finalisée reste liée au stock et à sa facture.",
+      "points": [
+        "Recherche par nom ou code-barres",
+        "Modification des quantités dans le panier",
+        "Sélection du client et consultation de son solde",
+        "Mise en attente et reprise des ventes",
+        "Choix du mode de paiement et saisie du montant payé",
+        "Impression de la facture après la vente"
+      ],
+      "caption": "Espace caisse · vente fictive"
+    },
+    {
+      "eyebrow": "02 / STOCK",
+      "title": "Chaque produit. Chaque mouvement.",
+      "text": "Sachez ce qui est disponible et ce qui demande votre attention. Suivez les stocks de la réception à la vente grâce à un historique consultable.",
+      "points": [
+        "Quantités disponibles et stocks faibles",
+        "Entrées, sorties et ajustements manuels",
+        "Mouvements des retours de vente et d’achat"
+      ],
+      "caption": "Espace stock · produits fictifs"
+    },
+    {
+      "eyebrow": "03 / ACHATS ET FOURNISSEURS",
+      "title": "Du fournisseur au rayon. Tout est lié.",
+      "text": "Gardez une trace claire de chaque livraison. Créez des commandes d’achat, suivez les paiements fournisseurs et réceptionnez les produits en stock.",
+      "points": [
+        "Comptes fournisseurs et historique d’achat",
+        "Pièces jointes d’achat réunies",
+        "Réceptions liées aux mouvements de stock"
+      ],
+      "caption": "Espace achats · achat fictif"
+    },
+    {
+      "eyebrow": "04 / RAPPORTS ET ANALYSES",
+      "title": "Comprenez ce que disent les chiffres.",
+      "text": "Explorez les tendances des ventes et les produits, clients et fournisseurs associés. Filtrez par dates pour étudier la période qui vous intéresse.",
+      "points": [
+        "Tendances des ventes et état des paiements",
+        "Rapports produits, clients et fournisseurs",
+        "Rapports de stock et d’achat"
+      ],
+      "caption": "Espace rapports · tendance fictive"
+    }
+  ],
+  "openWorkspace": "Ouvrir mon espace",
+  "features": {
+    "eyebrow": "TOUTE VOTRE ACTIVITÉ",
+    "title": "Chaque chose à sa place.",
+    "description": "Caisse, commandes, factures, stock, clients, achats et rapports : tous les outils de votre équipe au même endroit.",
+    "items": [
+      [
+        "Tableau de bord et analyses",
+        "Filtres de dates, évolution du chiffre d’affaires, ventes par catégorie, paiements, dépenses et alertes de stock."
+      ],
+      [
+        "Produits et tarifs",
+        "Images, référence SKU, code-barres, coût d’achat, trois prix de vente et seuil minimum de stock."
+      ],
+      [
+        "Catégories et marques",
+        "Organisez votre catalogue par catégorie et marque pour retrouver facilement les produits."
+      ],
+      [
+        "Import de produits",
+        "Importez des produits depuis Excel avec validation des champs et signalement des erreurs par ligne."
+      ],
+      [
+        "Commandes",
+        "Créez des commandes clients, modifiez les articles et les prix, suivez les statuts et générez les factures."
+      ],
+      [
+        "Caisse / Point de vente",
+        "Recherchez par code-barres, ajustez le panier, sélectionnez un client, mettez une vente en attente, encaissez et imprimez."
+      ],
+      [
+        "Inventaire et stock faible",
+        "Consultez les quantités et alertes, enregistrez les entrées, sorties et ajustements manuels."
+      ],
+      [
+        "Historique du stock",
+        "Retrouvez les mouvements liés aux ventes, achats, retours et ajustements manuels."
+      ],
+      [
+        "Factures et paiements",
+        "Créez des factures, imprimez ou téléchargez les PDF, enregistrez les règlements et consultez leur historique."
+      ],
+      [
+        "Comptes clients",
+        "Gérez les coordonnées, favoris, soldes dus et ajustements de solde."
+      ],
+      [
+        "Relevés clients",
+        "Consultez les opérations et les produits d’un client avec des filtres, tableaux et graphiques."
+      ],
+      [
+        "Fournisseurs",
+        "Gérez les comptes fournisseurs, produits, historiques d’achat, soldes et règlements."
+      ],
+      [
+        "Achats et réception",
+        "Créez des bons d’achat, modifiez les articles, joignez des documents, réglez les fournisseurs et réceptionnez le stock."
+      ],
+      [
+        "Scanner de factures IA",
+        "Importez un PDF ou une image, extrayez les lignes, vérifiez les correspondances et confirmez l’achat."
+      ],
+      [
+        "Retours de ventes",
+        "Retournez des articles facturés, indiquez leur état et suivez remboursements, avoirs clients et mouvements de stock."
+      ],
+      [
+        "Retours d’achats",
+        "Retournez des produits aux fournisseurs et enregistrez remboursements, avoirs et mouvements de stock."
+      ],
+      [
+        "Dépenses",
+        "Enregistrez loyers, salaires, transport, charges et autres dépenses avec dates et descriptions."
+      ],
+      [
+        "Rapports et exports",
+        "Analysez commandes, produits, clients, fournisseurs, achats et inventaire ; exportez en CSV, Excel ou PDF, ou imprimez."
+      ],
+      [
+        "Utilisateurs et permissions",
+        "Gérez les comptes du personnel, réinitialisez les mots de passe et attribuez des rôles avec permissions par module."
+      ],
+      [
+        "Langues et apparence",
+        "Travaillez en arabe, français ou anglais et personnalisez le nom, le logo et les couleurs des thèmes clair et sombre."
+      ]
+    ],
+    "groups": [
+      "Caisse et ventes",
+      "Catalogue et stock",
+      "Clients et fournisseurs",
+      "Achats et dépenses",
+      "Analyses et administration"
+    ]
+  },
+  "steps": {
+    "eyebrow": "UNE FAÇON CLAIRE DE TRAVAILLER",
+    "title": "Du premier produit à une activité bien organisée.",
+    "items": [
+      [
+        "Posez les bases",
+        "Ajoutez vos produits, fournisseurs et collaborateurs. Attribuez les accès nécessaires à chacun."
+      ],
+      [
+        "Gérez la journée",
+        "Vendez, gérez les achats et faites circuler le stock dans un même espace."
+      ],
+      [
+        "Gardez une vue d’ensemble",
+        "Consultez mouvements, soldes et rapports pour préparer la suite."
+      ]
+    ],
+    "businessTitle": "Pensé pour votre activité.",
+    "businessDescription": "Commerce de détail ou de gros : réunissez vos produits, commandes et stocks dans un seul espace de travail.",
+    "businesses": [
+      "Commerces de détail",
+      "Grossistes",
+      "Électronique et accessoires",
+      "Entreprises avec stocks"
+    ]
+  },
+  "faq": {
+    "eyebrow": "QUELQUES REPÈRES",
+    "title": "De bonnes questions. Des réponses claires.",
+    "description": "Des réponses fondées sur le fonctionnement réel de la plateforme.",
+    "items": [
+      [
+        "Comment le stock est-il mis à jour après une vente ?",
+        "L’enregistrement d’une vente par facture ou en caisse met à jour les quantités et crée le mouvement de stock correspondant. L’historique est consultable dans l’espace stock."
+      ],
+      [
+        "Puis-je gérer les fournisseurs et les achats ?",
+        "Oui. Vous pouvez créer des fournisseurs et des commandes d’achat, enregistrer les paiements, joindre les documents d’achat et réceptionner les produits en stock."
+      ],
+      [
+        "Puis-je contrôler les accès de chaque employé ?",
+        "Oui. Chaque collaborateur dispose d’un compte avec un rôle. Les rôles définissent les droits de consultation et de gestion des modules, vérifiés côté serveur."
+      ],
+      [
+        "Comment fonctionne le scanner de factures IA ?",
+        "Importez une facture fournisseur au format PDF, JPG, PNG ou WebP. Le scanner extrait les informations et propose des correspondances de produits. Vérifiez quantités, prix et correspondances, complétez les informations manquantes, puis confirmez l’achat. Les résultats de l’IA nécessitent une vérification humaine."
+      ],
+      [
+        "Puis-je gérer les retours ?",
+        "Oui. L’application gère les retours de vente et d’achat, l’état des articles, le suivi des remboursements et les mouvements de stock associés."
+      ],
+      [
+        "Quels rapports sont disponibles ?",
+        "Les rapports couvrent commandes, produits, clients, fournisseurs, achats et stocks. Le tableau de bord présente les tendances des ventes, les ventes par catégorie, l’état des paiements et les dépenses."
+      ],
+      [
+        "Puis-je utiliser le système sur téléphone ou tablette ?",
+        "Les interfaces s’adaptent aux petits écrans. Un écran plus grand offre davantage de place pour les tableaux détaillés, les rapports et l’espace caisse."
+      ]
+    ]
+  },
+  "cta": {
+    "eyebrow": "UN SEUL ESPACE. UNE JOURNÉE PLUS CLAIRE.",
+    "title": "Votre prochaine journée, un peu mieux organisée.",
+    "description": "Ventes, stocks et achats. Au même endroit."
+  },
+  "footer": {
+    "description": "Un espace connecté pour les stocks, les ventes et les achats.",
+    "product": "PRODUIT",
+    "workflows": "OPÉRATIONS",
+    "productLinks": "Liens produit",
+    "workflowLinks": "Liens opérations",
+    "overview": "Vue de la plateforme",
+    "scanner": "Scanner de factures IA",
+    "features": "Toutes les fonctionnalités",
+    "pos": "Point de vente",
+    "inventory": "Stock",
+    "purchases": "Achats",
+    "reports": "Rapports",
+    "faq": "Questions et réponses",
+    "rights": "Tous droits réservés.",
+    "tagline": "Pensé pour votre activité au quotidien.",
+    "help": "EN SAVOIR PLUS",
+    "helpLinks": "Liens utiles"
+  },
+  "preview": {
+    "currency": "DH",
+    "days": [
+      "Lun",
+      "Mar",
+      "Mer",
+      "Jeu",
+      "Ven",
+      "Sam",
+      "Dim"
+    ],
+    "chartLabel": "Tendance illustrative des ventes sur une semaine ; données fictives",
+    "records": "Exemples de fiches produits",
+    "product": "Produit",
+    "inStock": "En stock",
+    "quantity": "Quantité",
+    "status": "État du stock",
+    "unitPrice": "Prix unitaire",
+    "products": [
+      "Sac quotidien",
+      "Tasse en céramique",
+      "Carnet de bureau"
+    ],
+    "low": "Stock faible",
+    "available": "Disponible",
+    "search": "Rechercher un produit ou scanner un code-barres",
+    "currentSale": "VENTE EN COURS",
+    "cart": "Panier client",
+    "total": "Total",
+    "checkout": "Vérifier et encaisser",
+    "purchaseOrder": "COMMANDE D’ACHAT",
+    "supplier": "Atlas Supply",
+    "sampleSupplier": "Fournisseur fictif",
+    "pending": "Réception en attente",
+    "receive": "Réception de l’achat → entrée en stock",
+    "workspace": "espace de travail",
+    "sample": "Aperçu illustratif · données fictives",
+    "sidebar": "Barre latérale illustrative de l’application",
+    "workspaceLabel": "ESPACE DE TRAVAIL",
+    "labels": [
+      "Tableau de bord",
+      "Commandes",
+      "Stock",
+      "Achats",
+      "Rapports"
+    ],
+    "connected": "Vos opérations, connectées.",
+    "glance": "VOTRE ACTIVITÉ EN UN COUP D’ŒIL",
+    "overview": "Vue d’ensemble",
+    "week": "Cette semaine",
+    "metrics": [
+      "Ventes",
+      "Commandes",
+      "Produits"
+    ],
+    "sampleMetric": "Données fictives",
+    "salesOverview": "Évolution des ventes",
+    "sales": "Ventes",
+    "received": "Achat réceptionné",
+    "movement": "Mouvement de stock enregistré",
+    "activity": "Activité fictive",
+    "reportTags": [
+      "Ventes par catégorie",
+      "Meilleurs produits",
+      "État des paiements"
+    ],
+    "inventorySearch": "Produits · quantités · état du stock",
+    "history": "Chaque mouvement a son historique.",
+    "movements": [
+      "Achat → entrée",
+      "Vente → sortie",
+      "Retour → mouvement"
+    ],
+    "weekSample": "Cette semaine · données fictives",
+    "reports": [
+      "Produits",
+      "Clients",
+      "Stock"
+    ],
+    "orderColumns": [
+      "Commande",
+      "Client",
+      "Total",
+      "Statut"
+    ],
+    "sampleCustomer": "Client fictif"
+  },
+  "heroVisual": {
+    "checks": [
+      "Accès par rôle",
+      "Stock connecté",
+      "Achats vérifiés"
+    ],
+    "activity": "Activité récente",
+    "activities": [
+      "Vente enregistrée",
+      "Achat réceptionné",
+      "Produit modifié",
+      "Client ajouté",
+      "Facture créée"
+    ],
+    "supplierInvoice": "FACTURE FOURNISSEUR",
+    "scannerDescription": "Importez une facture fournisseur et laissez l’IA extraire les données.",
+    "extraction": "Extraction en cours…",
+    "annotation": "De la facture\naux données\nd’achat vérifiées.",
+    "products": [
+      "Huile moteur 5W30",
+      "Filtre à huile",
+      "Liquide de frein",
+      "Filtre à air"
+    ],
+    "systemImageAlt": "Espace de gestion Sytemano",
+    "features": [
+      [
+        "Caisse",
+        "Facilitez les ventes"
+      ],
+      [
+        "Stock",
+        "Suivez les mouvements"
+      ],
+      [
+        "Achats",
+        "Simplifiez la réception"
+      ],
+      [
+        "Factures",
+        "Des ventes bien suivies"
+      ],
+      [
+        "Rapports",
+        "Une vue d’ensemble"
+      ],
+      [
+        "Clients",
+        "Des comptes connectés"
+      ]
+    ]
+  },
+  "caisseCta": "Ouvrir la caisse",
+  "tryDashboard": "Tester le tableau de bord",
+  "tryCaisse": "Tester la caisse",
+  "languageSupport": {
+    "title": "Un seul système, trois langues.",
+    "description": "Utilisez sytemano en arabe, français ou anglais, avec une interface de droite à gauche en arabe."
+  }
+}

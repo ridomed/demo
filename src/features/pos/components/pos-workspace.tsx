@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import {
   Search,
@@ -561,7 +562,7 @@ export function PosWorkspace({
               {canDashboard && (
                 <DropdownMenuItem
                   nativeButton={false}
-                  render={<a href="/dashboard" />}
+                  render={<Link href="/dashboard" />}
                 >
                   <LayoutDashboard />
                   {t.pos.backToDashboard}

@@ -8,12 +8,16 @@ import { LoginForm } from "@/features/auth/components/login-form";
 import { LocaleSwitcher } from "@/components/shared/locale-switcher";
 import { BrandMark } from "@/components/shared/brand-mark";
 import { getSystemSettings } from "@/features/settings/queries";
+import { DemoCredentials } from "@/components/shared/demo-credentials";
+import { getDemoCredentials } from "@/lib/demo";
+import { getLocale } from "@/i18n/server";
 import { getDictionary } from "@/i18n/server";
 
 export default async function LoginPage() {
-  const [t, settings] = await Promise.all([
+  const [t, settings, locale] = await Promise.all([
     getDictionary(),
     getSystemSettings(),
+    getLocale(),
   ]);
 
   return (
@@ -40,12 +44,13 @@ export default async function LoginPage() {
           </h1>
         </div>
 
+        <DemoCredentials locale={locale} />
         <Card className="shadow-xl shadow-primary/5">
           <CardHeader className="text-center">
             <CardTitle className="text-lg">{t.auth.loginTitle}</CardTitle>
           </CardHeader>
           <CardContent>
-            <LoginForm />
+            <LoginForm demo={getDemoCredentials()} />
           </CardContent>
         </Card>
 

@@ -10,14 +10,17 @@ import {
 import { dictionaries, type Dictionary } from "@/i18n/dictionaries";
 
 export async function getLocale(): Promise<Locale> {
+  const requestHeaders = await headers();
+  const marketingLocale = requestHeaders.get("x-marketing-locale") ?? undefined;
+  if (isLocale(marketingLocale)) return marketingLocale;
+
   const store = await cookies();
   const cookieLocale = store.get(LOCALE_COOKIE)?.value;
-  // An explicit choice from the language switcher always wins.
+  // App routes use the explicit language preference before browser detection.
   if (isLocale(cookieLocale)) return cookieLocale;
 
   // No choice yet: use the browser's preferred language when it's one we
   // support, otherwise fall back to the default (French).
-  const requestHeaders = await headers();
   return (
     pickLocaleFromAcceptLanguage(requestHeaders.get("accept-language")) ??
     defaultLocale

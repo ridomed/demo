@@ -27,6 +27,8 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: settings.appShortName,
     description: t.common.siteDescription,
+    // Operational pages are private; localized marketing pages explicitly opt in.
+    robots: { index: false, follow: false },
     // A custom logo doubles as the browser-tab icon; otherwise the
     // configured favicon file.
     icons: { icon: settings.logoUrl || companyConfig.favicon },

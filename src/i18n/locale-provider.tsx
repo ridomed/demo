@@ -38,13 +38,13 @@ export function LocaleProvider({
             (cookie) => cookie.trim() === `${LOCALE_COOKIE}=${next}`,
           );
           if (!saved) {
-            toast.error(dictionary.public.genericErrorToast);
+            toast.error(dictionary.common.genericErrorToast);
             return;
           }
           // One navigation updates server content and the root lang/dir.
           window.location.reload();
         } catch {
-          toast.error(dictionary.public.genericErrorToast);
+          toast.error(dictionary.common.genericErrorToast);
         }
       });
     },

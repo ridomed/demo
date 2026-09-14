@@ -1,0 +1,554 @@
+{
+  "seo": {
+    "title": "Inventory, Sales & Purchase Management",
+    "description": "Manage inventory, sales, purchases, suppliers, customers and invoices in one connected workspace, with AI-assisted supplier invoice scanning."
+  },
+  "nav": {
+    "home": "Home",
+    "main": "Main navigation",
+    "mobile": "Mobile navigation",
+    "open": "Open navigation",
+    "close": "Close navigation",
+    "language": "Language",
+    "explore": "Try dashboard",
+    "links": [
+      "Product",
+      "Features",
+      "Caisse / POS",
+      "AI Scanner",
+      "About",
+      "FAQ"
+    ]
+  },
+  "skip": "Skip to content",
+  "hero": {
+    "eyebrow": "All-in-One Business Management",
+    "title": "Run your entire\nbusiness from",
+    "accent": "one place.",
+    "intro": "Manage sales, inventory, purchases, suppliers, customers and invoices in one connected system.",
+    "description": "With AI-powered invoice scanning.",
+    "explore": "View Demo",
+    "note": "Less invoice entry. More control. Meet your AI purchase scanner.",
+    "connected": "One connected workspace",
+    "sample": "Representative interface · illustrative data",
+    "discover": "Explore the product"
+  },
+  "trust": [
+    "Role-based access",
+    "Stock movement history",
+    "Connected operations",
+    "Reviewed purchase workflow"
+  ],
+  "outcomes": {
+    "eyebrow": "LESS CHASING. MORE CLARITY.",
+    "title": "A better handle on your everyday business.",
+    "intro": "Sales shouldn’t live apart from stock. Purchases shouldn’t disappear into spreadsheets. Bring the work together.",
+    "items": [
+      [
+        "Know what’s in stock.",
+        "See quantities, low-stock products and every movement behind them."
+      ],
+      [
+        "Keep sales moving.",
+        "Find products, build a cart and record a sale with connected invoices."
+      ],
+      [
+        "Control every purchase.",
+        "Keep suppliers, purchase orders and receiving in the same workflow."
+      ],
+      [
+        "See the bigger picture.",
+        "Follow sales, payments and inventory through focused business reports."
+      ]
+    ]
+  },
+  "product": {
+    "eyebrow": "THE CONNECTED WORKSPACE",
+    "title": "See your whole business at a glance.",
+    "description": "One place to start the day. Every part of the operation within reach.",
+    "more": {
+      "title": "And there’s more behind every view.",
+      "description": "Keep your customers, finances and team connected with the rest of your business.",
+      "cta": "Discover all features",
+      "highlights": [
+        "Caisse / POS",
+        "AI invoice scanning",
+        "Customer accounts",
+        "Team permissions"
+      ]
+    }
+  },
+  "tabs": [
+    {
+      "name": "Dashboard",
+      "text": "A clear view of the work that matters.",
+      "benefits": [
+        "Sales trends",
+        "Pending orders",
+        "Low-stock visibility"
+      ]
+    },
+    {
+      "name": "Orders",
+      "text": "Review customer orders, products and totals in one place.",
+      "benefits": [
+        "Customer orders",
+        "Order details",
+        "Invoice generation"
+      ]
+    },
+    {
+      "name": "Inventory",
+      "text": "Know what you have, and how it got there.",
+      "benefits": [
+        "Current quantities",
+        "Stock alerts",
+        "Movement history"
+      ]
+    },
+    {
+      "name": "Purchases",
+      "text": "Keep suppliers, purchases and receiving together.",
+      "benefits": [
+        "Purchase orders",
+        "Supplier payments",
+        "Stock receiving"
+      ]
+    },
+    {
+      "name": "Reports",
+      "text": "Give every business decision more context.",
+      "benefits": [
+        "Sales trends",
+        "Product reports",
+        "Inventory reports"
+      ]
+    }
+  ],
+  "scanner": {
+    "eyebrow": "AI PURCHASE INVOICE SCANNER",
+    "title": "Less typing. More moving forward.",
+    "description": "Turn supplier invoices into purchase data. Upload a PDF or image, extract the details, then review product matches before you confirm.",
+    "human": "Your review comes before confirmation.",
+    "workflow": [
+      "Upload invoice",
+      "Extract details",
+      "Match products",
+      "Review",
+      "Confirm purchase"
+    ],
+    "name": "Invoice scanner",
+    "sample": "Interactive walkthrough · sample data",
+    "stages": [
+      "Invoice",
+      "Extraction",
+      "Matching",
+      "Review"
+    ],
+    "file": "supplier-invoice.pdf",
+    "supplier": "Atlas Supply · sample supplier invoice",
+    "messages": [
+      "A supplier invoice, ready for extraction.",
+      "Invoice fields extracted into structured rows.",
+      "Product matches suggested. One line needs review.",
+      "Review quantities, prices and matches before confirming."
+    ],
+    "caption": "Sample extracted invoice lines",
+    "columns": [
+      "Product",
+      "Qty",
+      "Unit price",
+      "Match status"
+    ],
+    "products": [
+      "Everyday tote",
+      "Ceramic cup"
+    ],
+    "matched": "Matched",
+    "review": "Review required",
+    "safe": "In the app, resolve matches before confirming. This preview saves nothing.",
+    "control": "You stay in control. AI suggests; you review.",
+    "buttons": [
+      "Try the walkthrough",
+      "See product matches",
+      "Review results",
+      "Replay walkthrough"
+    ],
+    "currency": "DH"
+  },
+  "workflows": [
+    {
+      "eyebrow": "01 / CAISSE · POINT OF SALE",
+      "title": "A complete caisse for your daily sales.",
+      "text": "Give cashiers a dedicated workspace to select a customer, scan products, build the cart and record payment. Each completed sale stays connected to inventory and its invoice.",
+      "points": [
+        "Find products by name or barcode",
+        "Adjust quantities directly in the cart",
+        "Select a customer and view their balance",
+        "Hold a sale and resume it later",
+        "Choose a payment method and record the amount paid",
+        "Print the invoice after completing the sale"
+      ],
+      "caption": "Cashier workspace · illustrative sale"
+    },
+    {
+      "eyebrow": "02 / INVENTORY",
+      "title": "Every product. Every movement.",
+      "text": "Know what’s on the shelf and what needs attention. Follow stock from receiving to sales, with a movement history you can trace.",
+      "points": [
+        "Current quantities and low-stock visibility",
+        "Stock IN, OUT and manual adjustments",
+        "Sales and purchase return movements"
+      ],
+      "caption": "Inventory workspace · illustrative products"
+    },
+    {
+      "eyebrow": "03 / PURCHASES & SUPPLIERS",
+      "title": "From supplier to shelf. Connected.",
+      "text": "Give every delivery a clear record. Create purchase orders, track supplier payments and receive products into inventory.",
+      "points": [
+        "Supplier accounts and purchase history",
+        "Purchase attachments in one place",
+        "Receiving linked to inventory movements"
+      ],
+      "caption": "Purchasing workspace · illustrative purchase"
+    },
+    {
+      "eyebrow": "04 / REPORTS & ANALYTICS",
+      "title": "See the story behind the numbers.",
+      "text": "Move between sales trends and the products, customers and suppliers behind them. Use date filters to focus on the period that matters.",
+      "points": [
+        "Sales trends and payment status",
+        "Product, customer and supplier reports",
+        "Inventory and purchase reporting"
+      ],
+      "caption": "Reports workspace · illustrative trend"
+    }
+  ],
+  "openWorkspace": "Open your workspace",
+  "features": {
+    "eyebrow": "THE WHOLE OPERATION",
+    "title": "Everything has its place.",
+    "description": "Caisse, orders, invoices, inventory, customers, purchases and reports—all your team’s tools in one place.",
+    "items": [
+      [
+        "Dashboard & analytics",
+        "Date filters, revenue trends, category sales, payment status, expenses and low-stock indicators."
+      ],
+      [
+        "Products & pricing",
+        "Product images, SKU, barcode, purchase cost, three selling prices and minimum stock levels."
+      ],
+      [
+        "Categories & brands",
+        "Organize your catalogue by category and brand to find products more easily."
+      ],
+      [
+        "Product import",
+        "Import product records from Excel with field validation and row-level error feedback."
+      ],
+      [
+        "Orders",
+        "Create customer orders, update items and prices, follow statuses and generate invoices."
+      ],
+      [
+        "Caisse / POS",
+        "Find products by barcode, adjust the cart, select customers, hold sales, record payments and print invoices."
+      ],
+      [
+        "Inventory & low stock",
+        "Check quantities and stock alerts, record stock IN, OUT and manual adjustments."
+      ],
+      [
+        "Stock movement history",
+        "Trace movements associated with sales, purchases, returns and manual adjustments."
+      ],
+      [
+        "Invoices & payments",
+        "Create invoices, print or download PDFs, record payments and review payment history."
+      ],
+      [
+        "Customer accounts",
+        "Manage contact details, favourites, outstanding balances and balance adjustments."
+      ],
+      [
+        "Customer statements",
+        "Review customer transactions and product details using statement filters, tables and charts."
+      ],
+      [
+        "Suppliers",
+        "Maintain supplier accounts, product and purchase history, balances and supplier payments."
+      ],
+      [
+        "Purchases & receiving",
+        "Create purchase orders, edit items, attach documents, record payments and receive stock."
+      ],
+      [
+        "AI invoice scanner",
+        "Upload a PDF or image, extract invoice lines, review product matches and confirm a purchase."
+      ],
+      [
+        "Sales returns",
+        "Return invoice items, record their condition, track refunds or customer credit and stock movements."
+      ],
+      [
+        "Purchase returns",
+        "Return products to suppliers and record refund amounts, supplier credit and stock movements."
+      ],
+      [
+        "Expenses",
+        "Record rent, salaries, transport, utilities and other expenses with dates and descriptions."
+      ],
+      [
+        "Reports & exports",
+        "Explore order, product, customer, supplier, purchase and inventory reports; export CSV, Excel or PDF, or print."
+      ],
+      [
+        "Users & permissions",
+        "Manage staff accounts, reset passwords and assign roles with permissions for each module."
+      ],
+      [
+        "Languages & appearance",
+        "Work in Arabic, French or English, with customizable app naming, logo and light/dark theme colours."
+      ]
+    ],
+    "groups": [
+      "Caisse & sales",
+      "Catalogue & inventory",
+      "Customers & suppliers",
+      "Purchases & expenses",
+      "Analytics & administration"
+    ]
+  },
+  "steps": {
+    "eyebrow": "A CLEAR WAY TO WORK",
+    "title": "From your first product to a business under control.",
+    "items": [
+      [
+        "Set the foundation",
+        "Add your products, suppliers and team. Assign the access each person needs."
+      ],
+      [
+        "Run the day",
+        "Make sales, manage purchases and keep stock moving in one workspace."
+      ],
+      [
+        "Keep perspective",
+        "Review movements, balances and reports to understand what comes next."
+      ]
+    ],
+    "businessTitle": "Built around your business.",
+    "businessDescription": "Whether you run a retail store or a wholesale business, bring your products, orders and stock into one workspace.",
+    "businesses": [
+      "Retail stores",
+      "Wholesale businesses",
+      "Electronics & accessories",
+      "General inventory businesses"
+    ]
+  },
+  "faq": {
+    "eyebrow": "A FEW THINGS TO KNOW",
+    "title": "Good questions. Clear answers.",
+    "description": "Built around how the platform actually works.",
+    "items": [
+      [
+        "How does inventory update after a sale?",
+        "Recording a sale through an invoice or the POS updates product quantities and records the corresponding inventory movement. You can review movement history in the inventory workspace."
+      ],
+      [
+        "Can I manage suppliers and purchases?",
+        "Yes. You can create supplier records and purchase orders, record supplier payments, attach purchase documents and receive purchased products into stock."
+      ],
+      [
+        "Can I control what each employee can access?",
+        "Yes. Staff have individual accounts with assigned roles. Roles grant permissions for viewing or managing business modules, and permission checks are enforced on the server."
+      ],
+      [
+        "How does AI invoice scanning work?",
+        "Upload a supplier invoice as a PDF, JPG, PNG or WebP image. The scanner extracts fields and suggests product matches. Review the extracted quantities, prices and matches, resolve missing information, then confirm the purchase. AI output needs human review."
+      ],
+      [
+        "Can I manage returns?",
+        "Yes. The application includes sales returns and purchase returns, with item conditions, refund tracking and corresponding stock movements."
+      ],
+      [
+        "What reports are available?",
+        "Reports cover orders, products, customers, suppliers, purchases and inventory. Dashboard analytics include sales trends, category sales, payment status and expenses."
+      ],
+      [
+        "Can I use the system on a phone or tablet?",
+        "The application has responsive layouts for smaller screens. Larger screens give detailed tables, reports and the cashier workspace more room."
+      ]
+    ]
+  },
+  "cta": {
+    "eyebrow": "ONE WORKSPACE. A CLEARER DAY.",
+    "title": "Your next business day, a little more connected.",
+    "description": "Sales, inventory and purchasing. All in one place."
+  },
+  "footer": {
+    "description": "A connected workspace for inventory, sales and purchasing.",
+    "product": "PRODUCT",
+    "workflows": "WORKFLOWS",
+    "productLinks": "Product links",
+    "workflowLinks": "Workflow links",
+    "overview": "Platform overview",
+    "scanner": "AI invoice scanner",
+    "features": "All features",
+    "pos": "Point of sale",
+    "inventory": "Inventory",
+    "purchases": "Purchases",
+    "reports": "Reports",
+    "faq": "Questions & answers",
+    "rights": "All rights reserved.",
+    "tagline": "Built for the business of every day.",
+    "help": "LEARN MORE",
+    "helpLinks": "Information links"
+  },
+  "preview": {
+    "currency": "DH",
+    "days": [
+      "Mon",
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat",
+      "Sun"
+    ],
+    "chartLabel": "Illustrative sales trend rising across the week; sample data",
+    "records": "Illustrative product records",
+    "product": "Product",
+    "inStock": "In stock",
+    "quantity": "Quantity",
+    "status": "Stock status",
+    "unitPrice": "Unit price",
+    "products": [
+      "Everyday tote",
+      "Ceramic cup",
+      "Desk notebook"
+    ],
+    "low": "Low stock",
+    "available": "Available",
+    "search": "Search products or scan a barcode",
+    "currentSale": "CURRENT SALE",
+    "cart": "Customer cart",
+    "total": "Total",
+    "checkout": "Review & checkout",
+    "purchaseOrder": "PURCHASE ORDER",
+    "supplier": "Atlas Supply",
+    "sampleSupplier": "Sample supplier",
+    "pending": "Pending receipt",
+    "receive": "Receive purchase → record stock IN",
+    "workspace": "workspace",
+    "sample": "Illustrative preview · sample data",
+    "sidebar": "Illustrated application sidebar",
+    "workspaceLabel": "WORKSPACE",
+    "labels": [
+      "Dashboard",
+      "Orders",
+      "Inventory",
+      "Purchases",
+      "Reports"
+    ],
+    "connected": "Your operations. Connected.",
+    "glance": "YOUR BUSINESS AT A GLANCE",
+    "overview": "Overview",
+    "week": "This week",
+    "metrics": [
+      "Sales",
+      "Orders",
+      "Products"
+    ],
+    "sampleMetric": "Sample data",
+    "salesOverview": "Sales overview",
+    "sales": "Sales",
+    "received": "Purchase received",
+    "movement": "Stock movement recorded",
+    "activity": "Sample activity",
+    "reportTags": [
+      "Sales by category",
+      "Top products",
+      "Payment status"
+    ],
+    "inventorySearch": "Products · quantities · stock status",
+    "history": "Every movement has a history.",
+    "movements": [
+      "Purchase → IN",
+      "Sale → OUT",
+      "Return → movement"
+    ],
+    "weekSample": "This week · sample data",
+    "reports": [
+      "Products",
+      "Customers",
+      "Inventory"
+    ],
+    "orderColumns": [
+      "Order",
+      "Customer",
+      "Total",
+      "Status"
+    ],
+    "sampleCustomer": "Sample customer"
+  },
+  "heroVisual": {
+    "checks": [
+      "Role-based access",
+      "Connected inventory",
+      "Reviewed purchases"
+    ],
+    "activity": "Recent activity",
+    "activities": [
+      "New sale recorded",
+      "Purchase received",
+      "Product updated",
+      "Customer added",
+      "Invoice generated"
+    ],
+    "supplierInvoice": "SUPPLIER INVOICE",
+    "scannerDescription": "Upload a supplier invoice and let AI extract the data.",
+    "extraction": "Extracting invoice…",
+    "annotation": "From invoice\nto reviewed\npurchase data.",
+    "products": [
+      "Engine oil 5W30",
+      "Oil filter",
+      "Brake fluid",
+      "Air filter"
+    ],
+    "systemImageAlt": "Sytemano business management workspace",
+    "features": [
+      [
+        "Caisse / POS",
+        "Keep sales moving"
+      ],
+      [
+        "Inventory",
+        "Track every movement"
+      ],
+      [
+        "Purchases",
+        "Simplify receiving"
+      ],
+      [
+        "Invoices",
+        "Clear sales records"
+      ],
+      [
+        "Reports",
+        "See the bigger picture"
+      ],
+      [
+        "Customers",
+        "Connected accounts"
+      ]
+    ]
+  },
+  "caisseCta": "Open the caisse",
+  "tryDashboard": "Try dashboard",
+  "tryCaisse": "Try caisse",
+  "languageSupport": {
+    "title": "One system. Three languages.",
+    "description": "Use sytemano in Arabic, French or English, with a right-to-left interface in Arabic."
+  }
+}

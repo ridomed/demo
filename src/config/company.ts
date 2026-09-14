@@ -23,10 +23,10 @@
  */
 
 export const companyConfig = {
-  /** Full company name — sidebar, public site, invoice/purchase print headers. */
-  name: "cappuccino",
+  /** Full company name — sidebar and invoice/purchase print headers. */
+  name: "sytemano",
   /** Short form, used for the browser tab title. */
-  shortName: "cpn",
+  shortName: "STMN",
 
   /**
    * Path to a logo image (under /public, e.g. "/images/logo.png") shown
@@ -61,35 +61,11 @@ export const companyConfig = {
     },
   },
 
-  contact: {
-    phone: "" as string,
-    email: "" as string,
-    address: "" as string,
-    website: "" as string,
-  },
-
-  /** Social profile URLs shown as icons in the public storefront footer.
-   * Leave empty to hide a given icon — same convention as `contact` above. */
-  social: {
-    facebook: "" as string,
-    twitter: "" as string,
-    instagram: "" as string,
-  },
-
   /** Currency label shown after amounts, per language (src/lib/currency.ts). */
   currency: {
     ar: "درهم",
     en: "DH",
     fr: "DH",
-  },
-
-  /** Marketing figures shown on the public About page that aren't tracked
-   * anywhere in the app's data (years in business, partner count) — edit
-   * these directly as the business grows. Product and customer counts on
-   * that page are computed from real data instead. */
-  about: {
-    yearsExperience: 3,
-    partnersCount: 50,
   },
 } as const;
 

@@ -5,12 +5,6 @@ import { Prisma } from "@/generated/prisma/client";
 
 export const CUSTOMERS_PAGE_SIZE = 10;
 
-/** Total customer count with no PII — safe to show on the public storefront
- * (e.g. an About page "happy customers" stat). */
-export async function getCustomerCount() {
-  return prisma.customer.count();
-}
-
 export type DebtFilter = "HAS_DEBT" | "NO_DEBT";
 
 export type CustomerSort =

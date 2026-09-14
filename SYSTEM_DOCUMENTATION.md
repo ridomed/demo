@@ -28,6 +28,8 @@ This document is the single source of truth for this system: what it does, who c
 
 An Arabic-first (RTL, with English/French support), full-stack inventory + sales management system built on Next.js — an internal admin dashboard (`/dashboard/**`) for staff to manage products, stock, customers, sales, purchasing, suppliers, expenses, and reporting.
 
+The application retains `/dashboard/**` and the cashier workspace at `/caisse/**`, with `/login` and `/choose` supporting authentication and navigation. `/` redirects to the visitor’s preferred marketing language at `/ar`, `/fr`, or `/en`. These public pages include translated product previews, sign-in links, and Arabic RTL support. Canonical links and the localized sitemap use `SITE_URL` (default: `https://demo.sytemano.com`). The former shopping storefront, shopping cart, and public checkout remain removed; their former URLs return 404. Dashboard orders and cashier sales remain available.
+
 ### Main purpose
 
 Run the day-to-day operations of a small-to-mid-size retail/wholesale business: track stock, record sales as invoices, manage customer accounts and balances/debt, manage supplier purchase orders and payments, handle sales/purchase returns, and report on all of the above.
