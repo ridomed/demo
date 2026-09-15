@@ -1,7 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { FileText, Image as ImageIcon, File as FileIcon, Paperclip, X, Loader2, Download } from "lucide-react";
+import {
+  FileText,
+  Image as ImageIcon,
+  File as FileIcon,
+  Paperclip,
+  X,
+  Loader2,
+  Download,
+} from "lucide-react";
 import { toast } from "sonner";
 import { useT } from "@/i18n/locale-provider";
 import { formatMessage } from "@/i18n/format";
@@ -34,8 +42,10 @@ function formatFileSize(bytes: number) {
 }
 
 function FileTypeIcon({ fileType }: { fileType: string }) {
-  if (fileType.startsWith("image/")) return <ImageIcon className="size-5 shrink-0 text-muted-foreground" />;
-  if (fileType === "application/pdf") return <FileText className="size-5 shrink-0 text-muted-foreground" />;
+  if (fileType.startsWith("image/"))
+    return <ImageIcon className="size-5 shrink-0 text-muted-foreground" />;
+  if (fileType === "application/pdf")
+    return <FileText className="size-5 shrink-0 text-muted-foreground" />;
   return <FileIcon className="size-5 shrink-0 text-muted-foreground" />;
 }
 
@@ -67,13 +77,21 @@ export function FileAttachmentUploader({
 
     const remainingSlots = maxFiles - value.length;
     if (remainingSlots <= 0) {
-      toast.error(formatMessage(t.purchases.maxAttachmentsTemplate, { max: maxFiles }));
+      toast.error(
+        formatMessage(t.purchases.maxAttachmentsTemplate, { max: maxFiles }),
+      );
       return;
     }
     const files = Array.from(fileList).slice(0, remainingSlots);
-    const oversized = files.find((file) => file.size > MAX_FILE_SIZE_MB * 1024 * 1024);
+    const oversized = files.find(
+      (file) => file.size > MAX_FILE_SIZE_MB * 1024 * 1024,
+    );
     if (oversized) {
-      toast.error(formatMessage(t.purchases.fileTooLargeTemplate, { max: MAX_FILE_SIZE_MB }));
+      toast.error(
+        formatMessage(t.purchases.fileTooLargeTemplate, {
+          max: MAX_FILE_SIZE_MB,
+        }),
+      );
       return;
     }
 
@@ -122,7 +140,9 @@ export function FileAttachmentUploader({
       onChange([...value, ...uploaded]);
     } catch (error) {
       toast.error(
-        error instanceof Error ? error.message : t.purchases.fileUploadGenericError,
+        error instanceof Error
+          ? error.message
+          : t.purchases.fileUploadGenericError,
       );
     } finally {
       setIsUploading(false);
@@ -149,8 +169,13 @@ export function FileAttachmentUploader({
                 className="flex min-w-0 flex-1 items-center gap-2 hover:underline"
               >
                 <FileTypeIcon fileType={file.fileType} />
-                <span className="min-w-0 flex-1 truncate text-sm">{file.fileName}</span>
-                <span dir="ltr" className="shrink-0 text-xs text-muted-foreground">
+                <span className="min-w-0 flex-1 truncate text-sm">
+                  {file.fileName}
+                </span>
+                <span
+                  dir="ltr"
+                  className="shrink-0 text-xs text-muted-foreground"
+                >
                   {formatFileSize(file.fileSize)}
                 </span>
               </a>

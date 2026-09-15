@@ -75,7 +75,9 @@ export function PasswordConfirmDeleteDialog({
           </AlertDialogDescription>
         </AlertDialogHeader>
         <div className="space-y-2 px-1">
-          <Label htmlFor="delete-confirm-password">{t.common.deletePasswordLabel}</Label>
+          <Label htmlFor="delete-confirm-password">
+            {t.common.deletePasswordLabel}
+          </Label>
           <Input
             id="delete-confirm-password"
             type="password"

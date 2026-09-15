@@ -31,10 +31,19 @@ export function findStockIssue(
   const totals = new Map<string, number>();
   const existingTotals = new Map<string, number>();
   items.forEach((item) => {
-    if (item.productId) totals.set(item.productId, (totals.get(item.productId) ?? 0) + (Number(item.quantity) || 0));
+    if (item.productId)
+      totals.set(
+        item.productId,
+        (totals.get(item.productId) ?? 0) + (Number(item.quantity) || 0),
+      );
   });
   existingItems.forEach((item) => {
-    if (item.productId) existingTotals.set(item.productId, (existingTotals.get(item.productId) ?? 0) + (Number(item.quantity) || 0));
+    if (item.productId)
+      existingTotals.set(
+        item.productId,
+        (existingTotals.get(item.productId) ?? 0) +
+          (Number(item.quantity) || 0),
+      );
   });
   for (const product of products) {
     const requested = totals.get(product.id) ?? 0;
@@ -50,7 +59,15 @@ export function findStockIssue(
   return null;
 }
 
-export function StockAlertDialog({ issue, onClose, onConfirm }: { issue: StockIssue | null; onClose: () => void; onConfirm: () => void }) {
+export function StockAlertDialog({
+  issue,
+  onClose,
+  onConfirm,
+}: {
+  issue: StockIssue | null;
+  onClose: () => void;
+  onConfirm: () => void;
+}) {
   const { t } = useLocale();
   const [allowNegative, setAllowNegative] = useState(false);
   function close() {
@@ -58,23 +75,42 @@ export function StockAlertDialog({ issue, onClose, onConfirm }: { issue: StockIs
     onClose();
   }
   return (
-    <AlertDialog open={Boolean(issue)} onOpenChange={(open) => !open && close()}>
+    <AlertDialog
+      open={Boolean(issue)}
+      onOpenChange={(open) => !open && close()}
+    >
       <AlertDialogContent>
         <AlertDialogHeader>
-          <AlertDialogMedia className="bg-destructive/10 text-destructive"><AlertTriangle /></AlertDialogMedia>
+          <AlertDialogMedia className="bg-destructive/10 text-destructive">
+            <AlertTriangle />
+          </AlertDialogMedia>
           <AlertDialogTitle>{t.common.insufficientStockTitle}</AlertDialogTitle>
           <AlertDialogDescription>
-            {issue && formatMessage(t.common.insufficientProductStockTemplate, issue)}
+            {issue &&
+              formatMessage(t.common.insufficientProductStockTemplate, issue)}
             <span className="mt-2 block">{t.common.negativeStockWarning}</span>
           </AlertDialogDescription>
         </AlertDialogHeader>
         <label className="flex cursor-pointer items-start gap-3 rounded-lg border border-destructive/30 bg-destructive/5 p-3 text-sm">
-          <Checkbox checked={allowNegative} onCheckedChange={(checked) => setAllowNegative(checked === true)} />
+          <Checkbox
+            checked={allowNegative}
+            onCheckedChange={(checked) => setAllowNegative(checked === true)}
+          />
           <span>{t.common.allowNegativeStock}</span>
         </label>
         <AlertDialogFooter>
-          <AlertDialogCancel onClick={close}>{t.common.reviewQuantity}</AlertDialogCancel>
-          <Button disabled={!allowNegative} onClick={() => { setAllowNegative(false); onConfirm(); }}>{t.common.continueAnyway}</Button>
+          <AlertDialogCancel onClick={close}>
+            {t.common.reviewQuantity}
+          </AlertDialogCancel>
+          <Button
+            disabled={!allowNegative}
+            onClick={() => {
+              setAllowNegative(false);
+              onConfirm();
+            }}
+          >
+            {t.common.continueAnyway}
+          </Button>
         </AlertDialogFooter>
       </AlertDialogContent>
     </AlertDialog>

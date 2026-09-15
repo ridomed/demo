@@ -45,7 +45,8 @@ export function PriceComparison({
   }
 
   const { diff, percent, direction } = change;
-  const Icon = direction === "up" ? ArrowUp : direction === "down" ? ArrowDown : Minus;
+  const Icon =
+    direction === "up" ? ArrowUp : direction === "down" ? ArrowDown : Minus;
   const colorClass =
     direction === "up"
       ? "text-emerald-600 dark:text-emerald-400"
@@ -62,12 +63,23 @@ export function PriceComparison({
   return (
     <div className={cn("space-y-0.5", className)}>
       <p className="text-xs text-muted-foreground">
-        {beforeLabel}: <span className="font-mono tabular-nums text-foreground">{formatCurrency(beforeValue, locale)}</span>
+        {beforeLabel}:{" "}
+        <span className="font-mono tabular-nums text-foreground">
+          {formatCurrency(beforeValue, locale)}
+        </span>
       </p>
       <p className="text-xs text-muted-foreground">
-        {afterLabel}: <span className="font-mono tabular-nums text-foreground">{formatCurrency(after, locale)}</span>
+        {afterLabel}:{" "}
+        <span className="font-mono tabular-nums text-foreground">
+          {formatCurrency(after, locale)}
+        </span>
       </p>
-      <p className={cn("flex items-center gap-1 text-xs font-medium tabular-nums", colorClass)}>
+      <p
+        className={cn(
+          "flex items-center gap-1 text-xs font-medium tabular-nums",
+          colorClass,
+        )}
+      >
         <Icon className="size-3" />
         {sign}
         {formatCurrency(Math.abs(diff), locale)} · {sign}
